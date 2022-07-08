@@ -1,0 +1,155 @@
+body {
+  font-family: Comic Sans MS;
+  padding: 2px;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 5px;
+  background: black;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.responsive {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.mitem {
+  float: left;
+  text-align: center;
+}
+
+.mitem a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+.mitem a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 2px;
+}
+
+/*  below style added by vinesh  */
+.myImg {
+  width: 60vw;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.preview-image {
+  height: 400px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.custom-file-upload {
+  width: 100px;
+  text-align: center;
+  margin: 50px auto 50px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: white;
+  color: #3182ce;
+  box-shadow: 0px 10px #2c5282;
+  border-radius: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#paragraph {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+body {
+  font-family: Verdana;
+}
+
+.columnu {
+  float: left;
+  width: 31%;
+  color: #3182ce;
+  background-color: white;
+  margin-top: 7px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.rowu {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .columnu {
+    width: 100%;
+  }
+}
+
+.mycontainer{
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.output{
+  padding: 30px 0 0 60px;
+  flex: 1 1 100%;
+}

@@ -1,0 +1,21 @@
+
+{% extends 'index.html' %}
+
+{% block body %}
+
+
+
+<h3>Select a file to upload</h3>
+
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="image_name" class="custom-file-input" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit" class="btn btn-primary">
+	</p>
+</form>
+
+{% endblock  %}

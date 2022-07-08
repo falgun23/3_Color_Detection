@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Detection</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module" defer></script>
+  </head>
+  <body>
+    <form>
+      <div class="bar">
+        <button type="button" class="startBtn btn">Open the eyedropper</button>
+        <input class="imgInput" accept="image/*" type="file" />
+        <script>
+          const imgInpEl = document.querySelector(".imgInput");
+          function fileSelect() {
+            imgInpEl.click();
+          }
+        </script>
+        <button type="button" class="btn" onclick="fileSelect()">
+          Select File
+        </button>
+        <div class="edWrapper">
+          <div class="text">Selected Color</div>
+          <div class="edResult"></div>
+        </div>
+        <div class="finalWrapper">
+          <div class="text">Nearest Color</div>
+          <div class="finalResult"></div>
+        </div>
+      </div>
+      <div class="img">
+        <img class="imgEl" src="" alt="your image" />
+      </div>
+    </form>
+  </body>
+</html>

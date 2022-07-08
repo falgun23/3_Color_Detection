@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 30px 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:first-child {
+  color: white;
+  background-color: black;
+}
+.imgInput {
+  display: none;
+}
+.edWrapper,
+.finalWrapper {
+  width: 100%;
+  display: flex;
+  padding: 2px 0;
+}
+.edWrapper .text,
+.finalWrapper .text {
+  width: 20%;
+}
+.edWrapper div,
+.finalWrapper div {
+  width: 80%;
+}
+.edWrapper {
+  margin-top: 20px;
+}
+.finalWrapper {
+  margin-bottom: 20px;
+}
+
+.img img {
+  width: 100%;
+}
